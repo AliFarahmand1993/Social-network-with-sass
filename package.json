@@ -1,0 +1,19 @@
+{
+  "name": "social-network-with-sass",
+  "version": "1.0.0",
+  "description": "social network project with sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/scss/styles.scss assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farahmandaliir/Social-network-with-sass.git"
+  },
+  "author": "Ali Farahmand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farahmandaliir/Social-network-with-sass/issues"
+  },
+  "homepage": "https://github.com/farahmandaliir/Social-network-with-sass#readme"
+}
