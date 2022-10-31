@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utilities';
 
 * {
   box-sizing: border-box;
@@ -39,12 +40,13 @@ img {
   top: 0;
   border-bottom: solid 1px $primary-color;
   opacity: 0.9;
+
   ul {
     display: flex;
   }
 
   a {
-    color: #333;
+    color: #fff;
     padding: 0.45rem;
     margin: 0 0.25rem;
 
