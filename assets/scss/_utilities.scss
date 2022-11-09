@@ -76,7 +76,7 @@
   margin-right: 0.5rem;
   outline: none;
   transition: all 0.2s ease-in;
-
+  border-radius: .3rem;
   &.btn-primary {
     @include set-background($primary-color);
     &:hover {
