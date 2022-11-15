@@ -1,6 +1,6 @@
-@import 'config';
-@import 'utilities';
-@import 'form';
+@import "config";
+@import "utilities";
+@import "form";
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -59,7 +59,7 @@ img {
 // Landing
 .landing {
   position: relative;
-  background: url('../images/showcase.jpg') no-repeat center center/cover;
+  background: url("../images/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
 
   &-inner {
@@ -74,7 +74,7 @@ img {
     text-align: center;
   }
 }
-// Profiles Page
+// Developers Page
 .profile {
   display: grid;
   grid-gap: 2rem;
@@ -83,5 +83,87 @@ img {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+}
+// Profile Page
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+    grid-gap: 1rem;
+
+  .profile-top {
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.3rem;
+    img {
+      width: 250px;
+    }
+    .icons a {
+      color: #fff;
+      margin: 0 0.3rem;
+      &:hover {
+        color: $dark-color;
+        transition: 0.3s;
+      }
+    }
+  }
+  .profile-about {
+    grid-area: about;
+    border-radius: 0.3rem;
+    text-align: center;
+    .skills {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .profile-exp {
+    grid-area: exp;
+    border-radius: 0.3rem;
+    text-align: center;
+  }
+  .profile-edu {
+    grid-area: edu;
+    border-radius: 0.3rem;
+  }
+  .profile-exp,
+  .profile-edu {
+    & > div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: #ccc 1px dotted;
+    }
+    &:last-child {
+      border: none;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .profile-github {
+    grid-area: github;
+    border-radius: 0.3rem;
+    
+    .repo{
+      display: flex;
+      & > div:first-child {
+        flex: 7;
+        flex-basis: 70%;
+      }
+      & > div:last-child {
+        flex: 3;
+        flex-basis: 20%;
+      }
+    }
+  }
 }
