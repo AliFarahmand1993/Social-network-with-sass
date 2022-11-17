@@ -249,6 +249,14 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.table th, .table td {
+  padding: 1rem;
+  text-align: left;
+}
+.table th {
+  background-color: #f4f4f4;
+}
+
 .form-group {
   margin: 1.2rem 0;
 }
