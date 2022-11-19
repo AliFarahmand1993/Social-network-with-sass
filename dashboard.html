@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- html start -->
+<html lang="en">
+<!-- head start -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Author -->
+    <meta name="author" content="AliFarahmand" />
+    <!-- description -->
+    <meta name="description" content="Social Networt With Sass" />
+    <!-- keywords -->
+    <meta name="keywords" content="SocialNetwort,SocialMedia" />
+    <!-- Page Title -->
+    <title>Social Networt With Sass</title>
+    <!-- Favicon -->
+    <link href="" rel="icon" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <!-- icon  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.css" rel="stylesheet" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<!-- head end -->
+
+<!-- body start -->
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar bg-dark">
+            <h2><a href="./index.html"><i class="fa-solid fa-code"></i>DevConnector</a></h2>
+            <ul>
+                <li><a href="./Developers.html">Developers</a></li>
+                <li><a href="./Register.html">Register</a></li>
+                <li><a href="./dashboard.html"><i class="fas fa-user"></i>
+                        <span class="hide-sm">Dashboard</span></a></li>
+                <li><a href="./login.html"><i class="fas fa-sign-out-alt"></i>
+                        <span class="hide-sm">Logout</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main section start-->
+    <section class="container">
+        <h1 class="large text-primary">Dashboard</h1>
+        <p class="lead"><i class="fas fa-user"></i> Welcome Jhon Doe</p>
+        <!-- buttons -->
+        <div class="dash-buttons">
+            <a href="create-profile.html" class="btn">
+                <i class="fas fa-user-circle text-primary"></i> Edit Profile</a>
+            <a href="add-experience.html" class="btn">
+                <i class="fab fa-black-tie text-primary"></i> Add Experience</a>
+            <a href="add-education.html" class="btn">
+                <i class="fas fa-graduation-cap text-primary"></i> Add Education</a>
+        </div>
+        <!-- Table Experience-->
+        <h2 class="my-2">Experience Credentials</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th class="hide-sm">Company</th>
+                    <th class="hide-sm">Company</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row 1 -->
+                <tr>
+                    <td>MicroSoft</td>
+                    <td class="hied-sm">Senior Developer</td>
+                    <td class="hied-sm">Oct 2011-Current</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                    <td>MicroSoft</td>
+                    <td class="hied-sm">Senior Developer</td>
+                    <td class="hied-sm">Oct 2011-Current</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Table Education-->
+        <h2 class="my-2">Education Credentials</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th class="hide-sm">Degree</th>
+                    <th class="hide-sm">Years</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row 1 -->
+                <tr>
+                    <td>Univercity of Washington</td>
+                    <td class="hied-sm">Master</td>
+                    <td class="hied-sm">Sep 1993 - June 1999</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="my-2">
+            <button class="btn btn-danger"><i class="fas fa-user-minus"></i> Delete My Account
+            </button>
+        </div>
+    </section>
+    <!-- main end -->
+</body>
+<!-- body end -->
+
+</html>
