@@ -303,6 +303,65 @@
   color: #0077b5;
 }
 
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-top: 8rem;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center !important;
+    justify-content: center;
+  }
+  .navbar a {
+    padding: 1rem 2rem !important;
+  }
+  ul {
+    text-align: center;
+    justify-content: center;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  .profile {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .profile ul {
+    display: none;
+  }
+  .profile-grid {
+    grid-template-areas: "top" "about" "exp" "edu" "github" !important;
+  }
+  .profile-about .skills {
+    flex-direction: column !important;
+  }
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
