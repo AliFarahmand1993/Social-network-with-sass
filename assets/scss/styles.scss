@@ -93,7 +93,7 @@ img {
     "about about"
     "exp edu"
     "github github";
-    grid-gap: 1rem;
+  grid-gap: 1rem;
 
   .profile-top {
     grid-area: top;
@@ -153,8 +153,8 @@ img {
   .profile-github {
     grid-area: github;
     border-radius: 0.3rem;
-    
-    .repo{
+
+    .repo {
       display: flex;
       & > div:first-child {
         flex: 7;
@@ -165,5 +165,24 @@ img {
         flex-basis: 20%;
       }
     }
+  }
+}
+// Posts page
+.post-from-header {
+  padding: 0.5rem;
+}
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+
+  & > div:first-child {
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
   }
 }
